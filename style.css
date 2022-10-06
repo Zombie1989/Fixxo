@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+
+    --color-white: #FFFFFF;
+    --color-light-red: #CAC0BE;
+    --color-red: #FF7373;
+    --color-brown: #75695C;
+    --color-dark: #23262A;
+    --color-dark-text: #222529;
+    --color-grey-10: #7E7F80;
+    --color-grey-20: #BBBBBB;
+    --color-grey-30: #CDCED0;
+    --color-grey-40: #D9D9D9;
+    --color-grey-50: #E9E9E9;
+    --color-grey-60: #E7E7E7;
+    --color-grey-70: #EEEEEE;
+    --color-grey-80: #F5F5F5;
+    --color-grey-90: #F8F8F8;
+
+    --font-poppins: 'Poppins', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-sbold: 600;
+    --font-weight-bold: 700;
+    --font-weight-xbold: 800;
+    --font-size-13: 0.813rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-35: 2.188rem;
+    --font-size-45: 2.813rem;
+    --font-size-65: 4.063rem;
+
+    --border-radius-rounded: 50%;
+
+}
+
+html, body {
+    position: relative;
+    min-height: 100vh;
+    font-size: var(--font-size-16);
+    line-height: 1.5;
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-regular);
+}
+
+.top-header {
+    background-color: var(--color-grey-70);
+}
+    .top-header > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top-header .header-logo h1 {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-35);
+    }
