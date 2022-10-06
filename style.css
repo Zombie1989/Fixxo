@@ -46,17 +46,59 @@ html, body {
     line-height: 1.5;
     font-family: var(--font-poppins);
     font-weight: var(--font-weight-regular);
+    color: var(--color-dark-text)
 }
+
+/* changing every link on page */
+
+.page {
+    color: var(--color-red);
+}
+
+.mouse-over {
+    text-decoration: none;
+    color: var(--color-dark-text); 
+}
+    .mouse-over:hover {
+        color: var(--color-red);
+    }
+
+
+
+
+
+
 
 .top-header {
     background-color: var(--color-grey-70);
+    height: 75px;
 }
     .top-header > .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 20px;
     }
     .top-header .header-logo h1 {
         font-weight: var(--font-weight-bold);
         font-size: var(--font-size-35);
+        }
+    .top-header .links a {
+        background-color: white;
+        margin-left: 8px;
+        padding: 7px 11px;
+        border-radius: var(--border-radius-rounded);
     }
+
+
+.sale-50 {
+    background-color: var(--color-grey-70);
+}
+    .sale-50 > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sale-50 img {
+        max-width: 30%;
+
