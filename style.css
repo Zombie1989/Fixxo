@@ -8,8 +8,11 @@
     --color-white: #FFFFFF;
     --color-light-red: #CAC0BE;
     --color-red: #FF7373;
+    --color-red-hover: #DE6161;
     --color-brown: #75695C;
     --color-dark: #23262A;
+    --color-shadow: rgba(35, 38, 42, 0.253);
+    --color-dark-hover: #33373b;
     --color-dark-text: #222529;
     --color-grey-10: #7E7F80;
     --color-grey-20: #BBBBBB;
@@ -24,10 +27,11 @@
     --font-poppins: 'Poppins', sans-serif;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
-    --font-weight-sbold: 600;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --font-weight-xbold: 800;
+    --font-weight-extrabold: 800;
     --font-size-13: 0.813rem;
+    --font-size-14: 0.875rem;
     --font-size-16: 1rem;
     --font-size-18: 1.125rem;
     --font-size-20: 1.25rem;
@@ -36,6 +40,8 @@
     --font-size-65: 4.063rem;
 
     --border-radius-rounded: 50%;
+
+    --max-width: 1680px;
 
 }
 
@@ -46,53 +52,225 @@ html, body {
     line-height: 1.5;
     font-family: var(--font-poppins);
     font-weight: var(--font-weight-regular);
-    color: var(--color-dark-text)
+    color: var(--color-dark-text);
 }
 
 /* changing every link on page */
 
-.page {
-    color: var(--color-red);
-}
 
+.active-page {
+    color: var(--color-red);
+    text-decoration: none;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.other-page {
+    margin-right: 15px;
+    margin-left: 15px;
+}
 .mouse-over {
     text-decoration: none;
     color: var(--color-dark-text); 
 }
     .mouse-over:hover {
+        color: var(--color-red-hover);
+    }
+.bg-theme {
+    background-color: var(--color-red);
+}
+.img-left {
+    margin-left: -120px;
+}
+.img-right {
+    margin-right: -120px;
+}
+
+/* Button Settings */
+.btn-red {
+    position: relative;
+    text-align: center;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: none;
+    font-weight: var(--font-weight-semibold);
+    padding: 16px 50px;
+    transition: ease-in 200ms;
+}
+    .btn-red:hover {
+        background-color: var(--color-red-hover);
+    }
+.btn-dark {
+    position: relative;
+    text-align: center;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border: none;
+    font-weight: var(--font-weight-semibold);
+    padding: 1rem 2.25rem;
+    transition: ease-in 200ms;
+}
+    .btn-dark:hover {
+        background-color: var(--color-dark-hover);
+    }
+.btn-white {
+    position: relative;
+    text-align: center;
+    background-color: var(--color-white);
+    color: var(--color-dark-text);
+    border: none;
+    font-weight: var(--font-weight-semibold);
+    padding: 1rem 2.25rem;
+    transition: ease-in 200ms;
+}
+    .btn-white:hover {
+        background-color: var(--color-grey-90);
+    }
+
+.btn-box-left,
+.btn-box-right {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+.btn-box-left {
+
+    border-left: 2px solid var(--color-white);
+    border-top: 2px solid var(--color-white);
+    left: 10px;
+    top: 10px;
+}
+.btn-box-right {
+    border-right: 2px solid var(--color-white);
+    border-bottom: 2px solid var(--color-white);
+    right: 10px;
+    bottom: 10px;
+}
+/* Card body settings */
+
+.card-body {
+    position: relative;
+    background-color: var(--color-grey-80);
+    height: 210px;
+    overflow: hidden;
+}
+    .card-body:hover {
+        background-color: var(--color-grey-30);
+        transition: 200ms ease-in;
+    }
+    .card-body p {
+        position: absolute;
+        background-color: var(--color-red);
+        color: var(--color-white);
+        font-size: var(--font-size-14);
+        text-align: center;
+        padding-top: 20px;
+        width: 100%;
+        height: 60px;
+        margin-top: 101%;
+        transition: 200ms ease-in
+    }
+        .card-body:hover p {
+            margin-top: 150px;
+        }
+        .card-body:hover a {
+            margin-top: 0%;
+        }
+    .card-body .card-menu {
+        position: absolute;
+        list-style: none;
+        left: 101%;
+        transition: 200ms ease-in-out;
+        padding-top: 4px;
+    }
+        .card-body:hover .card-menu {
+            left: 69%;
+        }
+        .card-body .card-menu i {
+            background-color: var(--color-white);
+            color: var(--color-dark-text);
+            padding: 0.7rem;
+            margin: 0.2rem;
+            border-radius: var(--border-radius-rounded);
+            transition: 200ms ease-in;
+        }
+            .card-body .card-menu i:hover {
+                background-color: var(--color-dark);
+                color: var(--color-white);
+            }
+.card-bottom {
+    text-align: center;
+    padding-top: 6px;
+}
+    .card-bottom .light-text {
+        color: var(--color-grey-20);
+        font-size: var(--font-size-13);
+        font-weight: var(--font-weight-medium);
+        margin: 0;
+    }
+    .card-bottom h5 {
+        font-size: var(--font-size-16);
+        font-weight: var(--font-weight-semibold);
+        margin: 0.2rem;
+    }
+    .card-bottom i {
         color: var(--color-red);
     }
-
-
-
-
-
-
-
-.top-header {
-    background-color: var(--color-grey-70);
-    height: 75px;
-}
-    .top-header > .container {
+    .card-bottom .prices {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding-top: 20px;
+        text-indent: 0.8rem;
     }
-    .top-header .header-logo h1 {
-        font-weight: var(--font-weight-bold);
-        font-size: var(--font-size-35);
+        .card-bottom .prices .old-price {
+            text-decoration: line-through;
+            color: var(--color-grey-20);
+            font-size: var(--font-size-16);
         }
-    .top-header .links a {
-        background-color: white;
-        margin-left: 8px;
-        padding: 7px 11px;
-        border-radius: var(--border-radius-rounded);
+        .card-bottom .prices .regular-price { 
+            font-size: var(--font-size-18);
+            font-weight: var(--font-weight-semibold);
+            
+        }
+
+
+
+.grey {
+    background-color: var(--color-grey-70);
+}
+.top-header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.top-header .header-logo h1 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-35);
+}
+    .top-header .links {
+        display: flex;
+        justify-content: end;
+        align-items: center;
     }
+.top-header .links a {
+    background-color: white;
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+    border-radius: var(--border-radius-rounded);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 12px 3px var(--color-shadow);
+    position: relative;
+}
 
-
+/* Sale 50 banner */
 .sale-50 {
     background-color: var(--color-grey-70);
+
 }
     .sale-50 > .container {
         display: flex;
@@ -101,4 +279,155 @@ html, body {
     }
     .sale-50 img {
         max-width: 30%;
+    }
+        .sale-50 .sale-50-text {
+            text-align: center;
+        }
+            .sale-50 .sale-50-text h1 {
+                font-size: var(--font-size-65);
+                font-weight: var(--font-weight-extrabold);
+            }
+        .sale-50 .sale-50-text p {
+            font-size: var(--font-size-20);
+        }
 
+/* Featured Products */ 
+
+.featured-products {
+    margin: 100px;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+    .featured-products h3 {
+        text-align: center;
+        font-size: var(--font-size-20);
+        font-weight: bold;
+    }
+
+/* card grid eight (eight columns) */
+
+.card-grid-eight {
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px;
+    grid-template-rows: 310px;
+    gap: 30px;
+    max-width: 1110px;
+    margin: auto;
+    
+}
+
+/* flash sale */ 
+
+.flash-picks {
+    position: relative
+}
+
+.flash-picks .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .flash-picks .flash-pamela {
+        position: absolute;
+    }
+        .flash-picks .flash-pamela img {
+            width: 560px;
+        }
+    .flash-picks .flash-pamela .flash-text {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        color: var(--color-white);
+    }
+
+    .flash-picks .flash-sale {
+        position: absolute;
+        justify-self: right;
+    }
+        .flash-picks .flash-sale img {
+            width: 560px;
+            
+        }
+    .flash-picks .flash-sale .flash-text2 {
+        position: absolute;
+    }
+
+/* making the gap on the banner section */ 
+.banners {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Flash sale w grid */
+
+
+.flash-sale-off-1 .container {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin-top: 80px;
+}
+.flash-sale-off-1 img {
+    margin-right: 30px;
+}
+    .flash-sale-off-1 .card-grid-four {
+        display: grid;
+        grid-template-columns: 255px 255px;
+        grid-template-rows: 310px;
+        gap: 30px;
+        margin-right: 15px;
+    }
+
+.flash-sale-off-2 .container {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    margin-top: 70px;
+}
+.flash-sale-off-2 img {
+    margin-left: 30px;
+}
+    .flash-sale-off-2 .card-grid-four {
+        display: grid;
+        grid-template-columns: 255px 255px;
+        grid-template-rows: 310px;
+        gap: 30px;
+    }
+
+/* contacts.html */
+
+.breadcrumb {
+    font-weight: var(--font-weight-medium);
+    margin: 60px 0 40px 0;
+}
+    .breadcrumb .container {
+        max-width: 1110px;
+    }
+    .breadcrumb a {
+        color: var(--color-dark);
+    }
+        .breadcrumb a:hover {
+            color:var(--color-red);
+            transition: 200ms ease-in;
+        }
+
+
+.map {
+    margin-bottom: 70px;
+}
+    .map .google-map {
+        width: 100%;
+        border: 0;
+        height: 380px;
+    }
+
+
+
+
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: var(--max-width);
+    }
+}

@@ -10,47 +10,559 @@
    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-   <header>
-        <div class="top-header">
+    <header>
+        <div class="top-header grey">
             <div class="container">
                 <div class="header-logo">
                     <h1>Fixxo.</h1>
                 </div>
                 <div class="header-menu">
-                    <span class="page me-3">Home</span>
-                    <a href="#" class="other-page mouse-over me-3">Categories</a>
-                    <a href="#" class="other-page mouse-over me-3">Products</a>
-                    <a href="#" class="other-page mouse-over">Contacts</a>
+                    <span class="active-page">Home</span>
+                    <a href="#" class="other-page mouse-over">Categories</a>
+                    <a href="#" class="other-page mouse-over">Products</a>
+                    <a href="contacts.html" class="other-page mouse-over">Contacts</a>
                 </div>
                 <div class="links">
                     <a href="#"><i class="fa-solid fa-magnifying-glass mouse-over"></i></a>
                     <a href="#"><i class="fa-solid fa-repeat mouse-over"></i></a>
-                    <a href="#"><i class="fa-regular fa-heart mouse-over"></i></a>
-                    <a href="#"><i class="fa-regular fa-bag-shopping mouse-over"></i></a>                    
+                    <a href="#">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-theme">1</span>
+                        <i class="fa-regular fa-heart mouse-over"></i>
+                    </a>
+                    <a href="#">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-theme">3</span>
+                        <i class="fa-regular fa-bag-shopping mouse-over"></i>
+                    </a>                    
                 </div>
             </div>
         </div>
-   </header>
-   <section>
+    </header>
+
+   <!--Sale up to 50% banner-->
+
+    <section>
         <div class="sale-50">
             <div class="container">
-                <img src="images/placeholder/woman-on-chair.png" alt="" class="border">
-                <div>
-                    <h1>SALE UP TO 50% OFF</h1>
+                <img src="images/placeholder/woman-on-chair.png" class="img-left" alt="placeholder">
+                <div class="sale-50-text">
+                    <h1>SALE UP<br> TO 50% OFF</h1>
                     <p>Online shopping free home delivery over $100</p>
-                    <button>SHOP NOW</button>
+                    <button class="btn-red">
+                        <div class="btn-box-left"></div>
+                        SHOP NOW
+                        <div class="btn-box-right"></div>
+                    </button>
                 </div>
-                <img src="images/placeholder/person-sitting.png" alt="" class="border">
+                <img src="images/placeholder/person-sitting.png" class="img-right" alt="placeholder">
 
             </div>
         </div>
-
+   </section>
+   <section>
+        <div class="featured-products">
+            <div class="container">
+                <h3>featured-products</h3>
+                <div class=card-grid-eight>
+                    <div class="grid-card-settings">
+                        <a href="#" class="card-category">
+                            <div class=card-body>
+                                <p>
+                                    <span class="btn-box-left"></span>
+                                    Quick View
+                                    <span class="btn-box-right"></span>
+                                </p>
+                                <ul class="card-menu">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                                </ul>   
+                            </div>
+                            <div class=card-bottom>
+                                <p class="light-text">Category</p>
+                                <h5>Modern Black Blouse</h5>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <div class=prices>
+                                    <p class=old-price></p>
+                                    <p class=regular-price>$30.00</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-card-settings">
+                        <a href="#" class="card-category">
+                            <div class=card-body>
+                                <p>
+                                    <span class="btn-box-left"></span>
+                                    Quick View
+                                    <span class="btn-box-right"></span>
+                                </p>
+                                <ul class="card-menu">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                                </ul>   
+                            </div>
+                            <div class=card-bottom>
+                                <p class="light-text">Category</p>
+                                <h5>Modern Black Blouse</h5>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <div class=prices>
+                                    <p class=old-price>$35.00</p>
+                                    <p class=regular-price>$30.00</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-card-settings">
+                        <a href="#" class="card-category">
+                            <div class=card-body>
+                                <p>
+                                    <span class="btn-box-left"></span>
+                                    Quick View
+                                    <span class="btn-box-right"></span>
+                                </p>
+                                <ul class="card-menu">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                                </ul>   
+                            </div>
+                            <div class=card-bottom>
+                                <p class="light-text">Category</p>
+                                <h5>Modern Black Blouse</h5>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <div class=prices>
+                                    <p class=old-price></p>
+                                    <p class=regular-price>$30.00</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-card-settings">
+                        <a href="#" class="card-category">
+                            <div class=card-body>
+                                <p>
+                                    <span class="btn-box-left"></span>
+                                    Quick View
+                                    <span class="btn-box-right"></span>
+                                </p>
+                                <ul class="card-menu">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                                </ul>   
+                            </div>
+                            <div class=card-bottom>
+                                <p class="light-text">Category</p>
+                                <h5>Modern Black Blouse</h5>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <div class=prices>
+                                    <p class=old-price></p>
+                                    <p class=regular-price>$30.00</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-card-settings">
+                        <a href="#" class="card-category">
+                            <div class=card-body>
+                                <p>
+                                    <span class="btn-box-left"></span>
+                                    Quick View
+                                    <span class="btn-box-right"></span>
+                                </p>
+                                <ul class="card-menu">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                                </ul>   
+                            </div>
+                            <div class=card-bottom>
+                                <p class="light-text">Category</p>
+                                <h5>Modern Black Blouse</h5>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <div class=prices>
+                                    <p class=old-price>$35.00</p>
+                                    <p class=regular-price>$30.00</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-card-settings">
+                        <a href="#" class="card-category">
+                            <div class=card-body>
+                                <p>
+                                    <span class="btn-box-left"></span>
+                                    Quick View
+                                    <span class="btn-box-right"></span>
+                                </p>
+                                <ul class="card-menu">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                                </ul>   
+                            </div>
+                            <div class=card-bottom>
+                                <p class="light-text">Category</p>
+                                <h5>Modern Black Blouse</h5>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <div class=prices>
+                                    <p class=old-price></p>
+                                    <p class=regular-price>$3.00</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-card-settings">
+                        <a href="#" class="card-category">
+                            <div class=card-body>
+                                <p>
+                                    <span class="btn-box-left"></span>
+                                    Quick View
+                                    <span class="btn-box-right"></span>
+                                </p>
+                                <ul class="card-menu">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                                </ul>   
+                            </div>
+                            <div class=card-bottom>
+                                <p class="light-text">Category</p>
+                                <h5>Modern Black Blouse</h5>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <div class=prices>
+                                    <p class=old-price></p>
+                                    <p class=regular-price>$35.00</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-card-settings">
+                        <a href="#" class="card-category">
+                            <div class=card-body>
+                                <p>
+                                    <span class="btn-box-left"></span>
+                                    Quick View
+                                    <span class="btn-box-right"></span>
+                                </p>
+                                <ul class="card-menu">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                                </ul>   
+                            </div>
+                            <div class=card-bottom>
+                                <p class="light-text">Category</p>
+                                <h5>Modern Black Blouse</h5>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <div class=prices>
+                                    <p class=old-price></p>
+                                    <p class=regular-price>$35.00</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
    </section>
 
+   <!-- Top picks/flash sale-->
+
+   <section class="banners container">
+    <img src="images/placeholder/close-up.png" alt="placeholder">
+    <img src="images/placeholder/close-up-chest.png" alt="">
+   </section>
+
+   <!--flash sale off with grid-->
+
+   <section class="flash-sale-off-1">
+        <div class="container">
+            <img src="images/placeholder/2 FOR USD $29.png" alt="placeholder">
+            <div class="card-grid-four">
+                <div class="grid-card-settings">
+                    <a href="#" class="card-category">
+                        <div class=card-body>
+                            <p>
+                                <span class="btn-box-left"></span>
+                                Quick View
+                                <span class="btn-box-right"></span>
+                            </p>
+                            <ul class="card-menu">
+                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                            </ul>   
+                        </div>
+                        <div class=card-bottom>
+                            <p class="light-text">Category</p>
+                            <h5>Modern Black Blouse</h5>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <div class=prices>
+                                <p class=old-price></p>
+                                <p class=regular-price>$35.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-card-settings">
+                    <a href="#" class="card-category">
+                        <div class=card-body>
+                            <p>
+                                <span class="btn-box-left"></span>
+                                Quick View
+                                <span class="btn-box-right"></span>
+                            </p>
+                            <ul class="card-menu">
+                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                            </ul>   
+                        </div>
+                        <div class=card-bottom>
+                            <p class="light-text">Category</p>
+                            <h5>Modern Black Blouse</h5>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <div class=prices>
+                                <p class=old-price></p>
+                                <p class=regular-price>$35.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-card-settings">
+                    <a href="#" class="card-category">
+                        <div class=card-body>
+                            <p>
+                                <span class="btn-box-left"></span>
+                                Quick View
+                                <span class="btn-box-right"></span>
+                            </p>
+                            <ul class="card-menu">
+                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                            </ul>   
+                        </div>
+                        <div class=card-bottom>
+                            <p class="light-text">Category</p>
+                            <h5>Modern Black Blouse</h5>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <div class=prices>
+                                <p class=old-price></p>
+                                <p class=regular-price>$35.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-card-settings">
+                    <a href="#" class="card-category">
+                        <div class=card-body>
+                            <p>
+                                <span class="btn-box-left"></span>
+                                Quick View
+                                <span class="btn-box-right"></span>
+                            </p>
+                            <ul class="card-menu">
+                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                            </ul>   
+                        </div>
+                        <div class=card-bottom>
+                            <p class="light-text">Category</p>
+                            <h5>Modern Black Blouse</h5>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <div class=prices>
+                                <p class=old-price></p>
+                                <p class=regular-price>$35.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div> 
+        </div>
+   </section>
+   <section class="flash-sale-off-2">
+    <div class="container">
+        <div class="card-grid-four">
+            <div class="grid-card-settings">
+                <a href="#" class="card-category">
+                    <div class=card-body>
+                        <p>
+                            <span class="btn-box-left"></span>
+                            Quick View
+                            <span class="btn-box-right"></span>
+                        </p>
+                        <ul class="card-menu">
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                        </ul>   
+                    </div>
+                    <div class=card-bottom>
+                        <p class="light-text">Category</p>
+                        <h5>Modern Black Blouse</h5>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <div class=prices>
+                            <p class=old-price></p>
+                            <p class=regular-price>$35.00</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-card-settings">
+                <a href="#" class="card-category">
+                    <div class=card-body>
+                        <p>
+                            <span class="btn-box-left"></span>
+                            Quick View
+                            <span class="btn-box-right"></span>
+                        </p>
+                        <ul class="card-menu">
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                        </ul>   
+                    </div>
+                    <div class=card-bottom>
+                        <p class="light-text">Category</p>
+                        <h5>Modern Black Blouse</h5>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <div class=prices>
+                            <p class=old-price></p>
+                            <p class=regular-price>$35.00</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-card-settings">
+                <a href="#" class="card-category">
+                    <div class=card-body>
+                        <p>
+                            <span class="btn-box-left"></span>
+                            Quick View
+                            <span class="btn-box-right"></span>
+                        </p>
+                        <ul class="card-menu">
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                        </ul>   
+                    </div>
+                    <div class=card-bottom>
+                        <p class="light-text">Category</p>
+                        <h5>Modern Black Blouse</h5>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <div class=prices>
+                            <p class=old-price></p>
+                            <p class=regular-price>$35.00</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-card-settings">
+                <a href="#" class="card-category">
+                    <div class=card-body>
+                        <p>
+                            <span class="btn-box-left"></span>
+                            Quick View
+                            <span class="btn-box-right"></span>
+                        </p>
+                        <ul class="card-menu">
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-repeat"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                        </ul>   
+                    </div>
+                    <div class=card-bottom>
+                        <p class="light-text">Category</p>
+                        <h5>Modern Black Blouse</h5>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <div class=prices>
+                            <p class=old-price></p>
+                            <p class=regular-price>$35.00</p>
+                        </div>
+                    </div>
+                </a>
+            </div>            
+        </div> 
+        <img src="images/placeholder/2 FOR USD $29.png" alt="placeholder">
+    </div>
+</section>
 
 
-   
+
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
    <script src="script.js"></script>
+   <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 </html>
